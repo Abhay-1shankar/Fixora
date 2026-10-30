@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #09090b;
+  color: #d4d4d8;
+}
+
+@layer utilities {
+  .nav-link {
+    @apply text-zinc-400 hover:text-zinc-100 transition-colors;
+  }
+}
+
+/* Command Menu Styling */
+[cmdk-overlay] {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  animation: cmdkFadeIn 150ms ease;
+}
+
+[cmdk-dialog] {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  z-index: 50;
+  width: 90%;
+  max-width: 580px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  animation: cmdkScaleIn 150ms ease;
+}
+
+@keyframes cmdkFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cmdkScaleIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -28%) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -25%) scale(1);
+  }
+}
