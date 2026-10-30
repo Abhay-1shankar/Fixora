@@ -15,8 +15,7 @@ I built Fixora because I wanted to engineer an issue tracker that actually feels
 * **Custom Minimalist UI:** I stripped out the bulky default component styles in favor of a custom, deep-dark monochromatic aesthetic (`#09090b`), utilizing transparent surfaces and subtle borders to keep the interface clean and focused.
 
 <div align="center">
-  <!-- 📸 REPLACE THIS LINK WITH YOUR ACTUAL DASHBOARD SCREENSHOT -->
-  <img src="https://via.placeholder.com/800x450/09090b/ffffff?text=Add+Telemetry+Dashboard+Screenshot+Here" alt="Fixora Telemetry Dashboard" width="800"/>
+  <img src="public/dashboard.png" alt="Fixora Telemetry Dashboard" width="800"/>
 </div>
 
 ## 🛠 What I Used to Build It
